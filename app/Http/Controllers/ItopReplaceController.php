@@ -17,8 +17,9 @@ class ItopReplaceController extends Controller
     {
         // Get all data from itop-replases table
         $getData = ItopReplace::orderBy('id', 'desc')->get();
+        $itopReplaceCount = ItopReplace::count();
 
-        return view('itop-replace.index', compact('getData'));
+        return view('itop-replace.index', compact('getData','itopReplaceCount'));
     }
 
     /**

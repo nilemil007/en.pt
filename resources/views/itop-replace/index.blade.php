@@ -49,6 +49,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if ($itopReplaceCount > 0)
                             @foreach ($getData as $itopReplace)
                             <tr>
                                 <td>{{ $itopReplace->id }}</td>
@@ -96,6 +97,13 @@
                                 </td>
                             </tr>
                             @endforeach
+                            @else
+                            <tr>
+                                <td class="text-center" colspan="7">
+                                  <h4>No data found</h4>
+                                </td>
+                              </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>

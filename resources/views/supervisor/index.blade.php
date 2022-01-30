@@ -49,6 +49,13 @@
                         </thead>
 
                         <tbody>
+                          @if ($supervisorCount < 1)
+                            <tr>
+                              <td class="text-center" colspan="7">
+                                <h4>No supervisor assigned</h4>
+                              </td>
+                            </tr>
+                          @else
                           @foreach ($supervisors as $supervisor)
                           <tr>
                             <td>{{ $supervisor->id }}</td>
@@ -84,6 +91,7 @@
                             </td>
                           </tr>
                           @endforeach
+                          @endif
                         </tbody>
                       </table>
                     </div>
