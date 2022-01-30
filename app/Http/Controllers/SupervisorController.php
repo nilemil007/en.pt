@@ -117,6 +117,7 @@ class SupervisorController extends Controller
         $supervisor->nid                = $request->nid;
         $supervisor->dob                = $request->dob;
         $supervisor->joining_date       = $request->joining_date;
+        $supervisor->status             = $request->status;
         $supervisor->update();
 
         // Toastr alert message
