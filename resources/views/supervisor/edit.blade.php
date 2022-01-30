@@ -106,7 +106,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="address">Address</label>
-                                        <input type="text" name="address" value="{{ $editSupervisor->adderss }}"
+                                        <input type="text" name="address" value="{{ $editSupervisor->address }}"
                                             class="form-control" id="address" placeholder="Enter Address">
                                         @error('address')
                                         <small class="text-danger">{{ $message }}</small>
