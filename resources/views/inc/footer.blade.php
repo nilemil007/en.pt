@@ -28,7 +28,7 @@
 <!-- ChartJS -->
 <script src="{{ asset('plugins') }}/chart.js/Chart.min.js"></script>
 <!-- Toastr JS -->
-<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+<script src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
 
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist') }}/js/demo.js"></script>
