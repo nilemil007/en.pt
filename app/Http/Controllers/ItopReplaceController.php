@@ -102,7 +102,7 @@ class ItopReplaceController extends Controller
 
         // Data Validatoin
         $request->validate([
-            'rso_name' => 'filled|alpha|min:3|max:50',
+            'rso_name' => 'filled|min:3|max:50',
             'rso_itop' => 'filled|min:10|max:11',
             'rep_itop' => 'filled|min:10|max:11',
             'ev_swap' => 'filled|min:18|max:18',
