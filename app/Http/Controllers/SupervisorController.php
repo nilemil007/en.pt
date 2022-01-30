@@ -16,7 +16,7 @@ class SupervisorController extends Controller
      */
     public function index()
     {
-        $supervisors = Supervisor::all();
+        $supervisors = Supervisor::orderBy('id', 'desc')->get();
         return view('supervisor.index', compact('supervisors'));
     }
 
