@@ -23,3 +23,13 @@ Route::resource('itop-replace', ItopReplaceController::class);
 
 // Supervisor Controller
 Route::resource('supervisor', SupervisorController::class);
+
+Route::get('lifting', function(){
+    return view('lifting');
+});
+Route::get('sales', function(){
+    return view('sales');
+});
+Route::get('stock', function(){
+    return view('stock');
+});

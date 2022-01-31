@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset('plugins/toastr/toastr.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist') }}/css/adminlte.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="{{ asset('enpt.css') }}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
 <div class="wrapper">

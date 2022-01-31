@@ -1,4 +1,7 @@
 @extends('main')
+@section('dashboard-menu-open')menu-open @endsection
+@section('dashboard-menu-active')active @endsection
+@section('submenu-active')active @endsection
 @push('title')
     <title>EN PT</title>
 @endpush

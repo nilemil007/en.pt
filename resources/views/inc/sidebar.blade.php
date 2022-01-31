@@ -35,8 +35,8 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                <li class="nav-item @yield('dashboard-menu-open')">
+                    <a href="#" class="nav-link @yield('dashboard-menu-active')">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -45,9 +45,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link">
+                            <a href="{{ url('lifting') }}" class="nav-link @yield('lifting-menu-active')">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Dashboard v1</p>
+                                <p>Lifting</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('sales') }}" class="nav-link @yield('sales-menu-active')">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('stock') }}" class="nav-link @yield('stock-menu-active')">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Stock</p>
                             </a>
                         </li>
                     </ul>
