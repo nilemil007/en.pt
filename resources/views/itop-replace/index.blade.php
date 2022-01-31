@@ -97,6 +97,7 @@
                                 </td>
                             </tr>
                             @endforeach
+                            
                             @else
                             <tr>
                                 <td class="text-center" colspan="7">
