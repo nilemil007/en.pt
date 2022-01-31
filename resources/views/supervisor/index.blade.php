@@ -1,4 +1,9 @@
 @extends('main')
+
+@section('supervisor-menu-open') @endsection
+@section('supervisor-active')active @endsection
+@section('supervisor-menu-active')active @endsection
+
 @push('title')
     <title>Supervisor | EN PT</title>
 @endpush
@@ -52,13 +57,17 @@
                           @if ($supervisorCount < 1)
                             <tr>
                               <td class="text-center" colspan="7">
-                                <h4>No supervisor assigned</h4>
+                                <h5>No supervisor assigned</h5>
                               </td>
                             </tr>
                           @else
+
+                          @php
+                            $i = 1
+                          @endphp
                           @foreach ($supervisors as $supervisor)
                           <tr>
-                            <td>{{ $supervisor->id }}</td>
+                            <td>{{ $i++ }}</td>
                             <td>{{ $supervisor->sup_name }}</td>
                             <td>{{ $supervisor->sup_number }}</td>
                             <td>{{ $supervisor->personal_number }}</td>

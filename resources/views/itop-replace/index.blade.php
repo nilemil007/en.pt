@@ -1,4 +1,9 @@
 @extends('main')
+
+@section('itop-replace-menu-open') @endsection
+@section('itop-replace-active')active @endsection
+@section('itop-replace-menu-active')active @endsection
+
 @push('title')
 <title>Itop Replace | EN PT</title>
 @endpush
@@ -50,9 +55,12 @@
                         </thead>
                         <tbody>
                             @if ($itopReplaceCount > 0)
+                            @php
+                                $i = 1;
+                            @endphp
                             @foreach ($getData as $itopReplace)
                             <tr>
-                                <td>{{ $itopReplace->id }}</td>
+                                <td>{{ $i++ }}</td>
                                 <td>{{ $itopReplace->rso_name }}</td>
                                 <td>{{ $itopReplace->rso_itop }}</td>
                                 <td>{{ $itopReplace->rep_itop }}</td>
@@ -97,11 +105,11 @@
                                 </td>
                             </tr>
                             @endforeach
-                            
+
                             @else
                             <tr>
                                 <td class="text-center" colspan="7">
-                                  <h4>No data found</h4>
+                                  <h5>No data found</h5>
                                 </td>
                               </tr>
                             @endif
