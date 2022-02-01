@@ -78,8 +78,8 @@
                 </li>
 
                 {{-- RSO --}}
-                <li class="nav-item @yield('supervisor-menu-open')">
-                    <a href="#" class="nav-link @yield('supervisor-active')">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-users"></i>
                         <p>RSO</p>
                     </a>
