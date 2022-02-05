@@ -65,7 +65,7 @@
 
                {{-- Itop Replace --}}
                <li class="nav-item @yield('itop-replace-menu-open')">
-                   <a href="{{ route('itop-replace.index') }}" class="nav-link {{ Request::routeIs('itop-replace.index') ? 'active' : '' }}">
+                   <a href="{{ route('itop-replace.index') }}" class="nav-link{{ Request::routeIs('itop-replace.index') ? ' active' : '' }}">
                        <i class="nav-icon fas fa-recycle"></i>
                        <p>
                            Itop Replace
@@ -76,7 +76,7 @@
 
                 {{-- Supervisor --}}
                 <li class="nav-item @yield('supervisor-menu-open')">
-                    <a href="{{ route('supervisor.index') }}" class="nav-link {{ Request::routeIs('supervisor.index') ? 'active' : '' }}">
+                    <a href="{{ route('supervisor.index') }}" class="nav-link{{ Request::routeIs('supervisor.index') ? ' active' : '' }}">
                         <i class="nav-icon fas fa-user-friends"></i>
                         <p>Supervisor</p>
                     </a>
