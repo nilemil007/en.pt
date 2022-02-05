@@ -33,8 +33,6 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <!-- Add icons to the links using the .nav-icon class
-                     with font-awesome or any other icon font library -->
                 <li class="nav-item @yield('dashboard-menu-open')">
                     <a href="#" class="nav-link @yield('dashboard-menu-active')">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -67,7 +65,7 @@
 
                {{-- Itop Replace --}}
                <li class="nav-item @yield('itop-replace-menu-open')">
-                   <a href="{{ route('itop-replace.index') }}" class="nav-link @yield('itop-replace-active')">
+                   <a href="{{ route('itop-replace.index') }}" class="nav-link {{ Request::routeIs('itop-replace.index') ? 'active' : '' }}">
                        <i class="nav-icon fas fa-recycle"></i>
                        <p>
                            Itop Replace
@@ -78,7 +76,7 @@
 
                 {{-- Supervisor --}}
                 <li class="nav-item @yield('supervisor-menu-open')">
-                    <a href="{{ route('supervisor.index') }}" class="nav-link @yield('supervisor-active')">
+                    <a href="{{ route('supervisor.index') }}" class="nav-link {{ Request::routeIs('supervisor.index') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-friends"></i>
                         <p>Supervisor</p>
                     </a>
