@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(document).on('click', '.delrepdata', function(){
+    $(document).on('click', '.deleteReplace,.deleteSupervisor', function(){
         $('#deleteModal').modal('show');
     });
 });

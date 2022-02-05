@@ -93,8 +93,9 @@
                                         <button class="btn btn-sm btn-primary"><i class="far fa-edit"></i></button>
                                     </a>
 
-                                    <button type="button" class="btn btn-sm btn-danger" data-toggle="modal"
-                                        data-target="#delModal"><i class="far fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-sm btn-danger deleteReplace">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
 
                                     {{-- <form class="ml-1" action="{{ route('itop-replace.destroy', $itopReplace->id) }}"
                                     method="post">
@@ -122,35 +123,12 @@
         <!-- /.row -->
     </div>
     <!--/. container-fluid -->
-    <!-- Button trigger modal -->
 
-    <!-- Delete Modal -->
-    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            @isset($itopReplace)
-            <form action="{{ route('itop-replace.destroy', $itopReplace->id) }}" method="post">
-                @csrf
-                @method('DELETE')
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete Itop Replace Data</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Confirm delete it?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
-                    </div>
-                </div>
-            </form>
-            @endisset
-        </div>
-    </div>
-    <!-- End Delete Modal -->
+    <!-- / Modal -->
+    @isset($itopReplace)
+    <x-modal title="Delete Itop Replace Record" desc="Are you sure you want to delete this record?" action="{{route('itop-replace.destroy', $itopReplace->id)}}"/>
+    @endisset
+<!-- / End Modal -->
 </section>
 <!-- /.content -->
 @endsection

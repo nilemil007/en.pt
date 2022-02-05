@@ -46,19 +46,19 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('lifting') }}" class="nav-link @yield('lifting-menu-active')">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-level-up-alt nav-icon"></i>
                                 <p>Lifting</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('sales') }}" class="nav-link @yield('sales-menu-active')">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-chart-pie nav-icon"></i>
                                 <p>Sales</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('stock') }}" class="nav-link @yield('stock-menu-active')">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="fas fa-dolly-flatbed nav-icon"></i>
                                 <p>Stock</p>
                             </a>
                         </li>
