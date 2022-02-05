@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Supervisor;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,7 +14,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $supervisorCount = Supervisor::count();
-        return view('dashboard', compact('supervisorCount'));
+        return view('dashboard');
     }
 }
