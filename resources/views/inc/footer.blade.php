@@ -34,6 +34,9 @@
 <script src="{{ asset('dist') }}/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('dist') }}/js/pages/dashboard2.js"></script>
+<!-- Datatable -->
+<script src="{{ asset('jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
 <!-- ENPT JS -->
 <script src="{{ asset('enpt.js') }}"></script>
 {!! Toastr::message() !!}

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Supervisor;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 use Toastr;
 
 class SupervisorController extends Controller
@@ -14,7 +13,7 @@ class SupervisorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $supervisors = Supervisor::orderBy('id', 'desc')->get();
         $supervisorCount = Supervisor::count();

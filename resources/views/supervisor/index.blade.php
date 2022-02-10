@@ -31,8 +31,8 @@
         <div class="container-fluid">
             <!-- Info boxes -->
             <div class="row">
-                <div class="col-12 card">
-                    <div class="card-header">
+                <div class="col-12 card pb-2">
+                    <div class="card-header mb-3">
                         <h3 class="card-title">Supervisor List</h3>
                         <a href="{{ route('supervisor.create') }}">
                             <button class="btn btn-sm btn-primary ml-auto d-block"><i class="fas fa-plus"></i> Add New
@@ -41,7 +41,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
-                        <table class="table table-hover text-nowrap table-bordered table-striped mb-2">
+                        <table id="supervisor-tbl" class="table table-hover text-nowrap table-bordered table-striped mb-2">
                             <thead>
                             <tr>
                                 <th style="width: 10px">#</th>

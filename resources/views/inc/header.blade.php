@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset('plugins/toastr/toastr.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist') }}/css/adminlte.min.css">
+    <!-- Datatable -->
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <!-- Custom style -->
     <link rel="stylesheet" href="{{ asset('enpt.css') }}">
 </head>

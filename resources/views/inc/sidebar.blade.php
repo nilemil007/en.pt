@@ -34,13 +34,14 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item @yield('dashboard-menu-open')">
-                    <a href="#" class="nav-link @yield('dashboard-menu-active')">
+                    <a href="{{ URL::to('/') }}" class="nav-link @yield('dashboard-menu-active')">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    {{-- Submenu --}}
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ url('lifting') }}" class="nav-link @yield('lifting-menu-active')">
