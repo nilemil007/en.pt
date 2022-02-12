@@ -33,3 +33,7 @@ Route::get('sales', function(){
 Route::get('stock', function(){
     return view('stock');
 });
+
+Route::get('test', function(){
+    return view('test');
+});
